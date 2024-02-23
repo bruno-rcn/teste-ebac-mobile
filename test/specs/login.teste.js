@@ -14,7 +14,7 @@ describe('Funcionalidade: Login', () => {
         await driver.pause(3000)
     })
 
-    it.only('Deve fazer cadastro com sucesso', async () => {
+    it('Deve fazer cadastro com sucesso', async () => {
         await homePage.openMenu('profile')
         await loginPage.Signup()
         await signupPage.Cadastro('Bruno', 'Noberto', '956518678', 'brunorcnoberto@teste.com', '123456', '123456')
